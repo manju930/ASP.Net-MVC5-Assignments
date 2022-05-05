@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Assignment 6 AJAX MVC5</h2>
+
+<div>
+    @Ajax.ActionLink("Get Server Time", "GetServerTime", new AjaxOptions
+    {
+        UpdateTargetId = "result",
+        InsertionMode = InsertionMode.Replace,
+        LoadingElementId = "progress"
+    })
+
+    <span id="progress" style="display:none">
+        Getting server
+        time...wait...
+    </span>
+
+
+    <div id="result"></div>
+
+</div>
+<span>Test Page</span>
+<div>
+    <a href="/Home/CreateUser">Create New User</a>
+</div>
