@@ -5,12 +5,15 @@
 <h2>Assignment 6 AJAX MVC5</h2>
 
 <div>
-    @Ajax.ActionLink("Get Server Time", "GetServerTime", new AjaxOptions
-    {
-        UpdateTargetId = "result",
-        InsertionMode = InsertionMode.Replace,
-        LoadingElementId = "progress"
-    })
+    @Ajax.ActionLink("Get Server Time", 
+        "GetServerTime",
+        new AjaxOptions
+        {
+            UpdateTargetId = "abcde",
+            InsertionMode = InsertionMode.Replace,
+            LoadingElementId = "progress"
+        }
+    )
 
     <span id="progress" style="display:none">
         Getting server
@@ -19,7 +22,7 @@
 
 
     <div id="result"></div>
-
+        <p id="abcde" ></p>
 </div>
 <span>Test Page</span>
 <div>
